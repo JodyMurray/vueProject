@@ -1,19 +1,33 @@
 <template>
   <div class="home">
-    <h1>Welcome to the Home Component</h1>
-    <p>This is the homepage of your Vue.js application.</p>
+    <Navbar />
+    <div class="content">
+      <h1>Welcome to the Home Page</h1>
+      <p>This is the content of your home page.</p>
+    </div>
   </div>
 </template>
 
 <script>
+import Navbar from './Navbar.vue'
+
 export default {
-  name: 'Home'
+  name: 'Home',
+  components: {
+    Navbar
+  }
 }
 </script>
 
 <style>
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  margin-top: 60px;
   text-align: center;
-  margin: 20px;
 }
 </style>

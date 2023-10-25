@@ -1,27 +1,18 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo1.png" />
-    <Home />
-  </div>
+  <Home />
 </template>
 
 <script>
-import Home from './components/Home.vue'; // Import the Home component
+import Home from '././components/Home.vue';
 
 export default {
-  name: 'App',
   components: {
-    Home, // Register the Home component
+    Home,
   },
 };
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -29,5 +20,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
 }
 </style>
