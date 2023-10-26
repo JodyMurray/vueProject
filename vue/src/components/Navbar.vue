@@ -21,15 +21,15 @@ export default {
   margin-top: 8px;
 }
 .navbar {
-  background-color: rgba(255, 255, 255, 0.1); /* Adjust the background color and opacity */
-  backdrop-filter: blur(10px); /* Add a backdrop filter for a frosted glass effect */
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: opacity(10px);
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   position: fixed;
   bottom: 0;
   width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Add a border on top for separation */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 2;
 }
 
