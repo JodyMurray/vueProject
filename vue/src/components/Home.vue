@@ -3,7 +3,7 @@
     <Navbar />
     <div class="overlay">
       <div class="content">
-        <h1>Welcome to the Home Page</h1>
+        <h1>Welcome to Recipe Rave!</h1>
         <div v-for="(recipe, index) in recipes" :key="index" class="recipe">
           <h2>{{ recipe.name }}</h2>
           <p>{{ recipe.description }}</p>
@@ -16,14 +16,10 @@
 </template>
 
 <script>
-import Navbar from './Navbar.vue'
 import PastaImage from '../assets/pasta.jpg'
 
 export default {
   name: 'Home',
-  components: {
-    Navbar
-  },
   data() {
     return {
       recipes: [
@@ -69,7 +65,9 @@ export default {
   background-image: url('src/assets/recipehome.jpeg');
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
 }
 
 .read-more {

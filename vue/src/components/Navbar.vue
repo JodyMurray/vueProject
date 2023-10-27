@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: 'Navbar',
+  name: 'Navbar'
 }
 </script>
 
@@ -28,7 +28,7 @@ export default {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 80%;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 2;
 }
@@ -40,12 +40,9 @@ export default {
   display: flex;
 }
 
-.navbar li {
-  padding: 10px;
-}
-
 .navbar a {
   color: white;
+  padding: 10px;
   text-decoration: none;
   font-weight: bold; /* Make the text more prominent */
 }

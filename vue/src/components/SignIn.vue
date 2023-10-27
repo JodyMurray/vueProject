@@ -6,8 +6,12 @@
 </template>
 
 <script>
+import Navbar from './Navbar.vue'
 export default {
   name: 'SignIn',
+  components: {
+    Navbar
+  }
 }
 </script>
 
