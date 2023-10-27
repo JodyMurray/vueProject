@@ -4,14 +4,11 @@
     <div class="overlay">
       <div class="content">
         <h1>Welcome to the Home Page</h1>
-        <p>This is the content of your home page.</p>
         <div v-for="(recipe, index) in recipes" :key="index" class="recipe">
           <h2>{{ recipe.name }}</h2>
           <p>{{ recipe.description }}</p>
-          <ul class="ingredients-list">
-            Ingredients:
-            <li v-for="(ingredient, i) in recipe.ingredients" :key="i">{{ ingredient }}</li>
-          </ul>
+          <img :src="recipe.image" alt="Recipe Image" />
+          <button class="read-more">Read more</button>
         </div>
       </div>
     </div>
@@ -20,6 +17,7 @@
 
 <script>
 import Navbar from './Navbar.vue'
+import PastaImage from '../assets/pasta.jpg'
 
 export default {
   name: 'Home',
@@ -32,6 +30,7 @@ export default {
         {
           name: 'Veggie Pasta Primavera',
           description: 'A delightful pasta dish packed with fresh vegetables and herbs.',
+          image: PastaImage,
           ingredients: [
             '8 oz. penne pasta',
             '1 cup cherry tomatoes, halved',
@@ -72,6 +71,21 @@ export default {
   background-position: center;
   height: 100vh;
 }
+
+.read-more {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.read-more:hover {
+  background-color: #45a049;
+}
+
 .recipe {
   margin-top: 20px;
   border: 1px solid #ddd;
@@ -84,6 +98,13 @@ export default {
 .ingredients-list {
   list-style-type: none;
   padding: 0;
+}
+
+.recipe img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  border-radius: 5px; /* Add border radius to match the recipe box */
+  margin-bottom: 10px; /* Adjust margin as needed for spacing */
 }
 
 .overlay {
