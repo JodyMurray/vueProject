@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .logo {
   height: 35px;
   margin-left: 15px;
@@ -28,7 +28,8 @@ export default {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  width: 80%;
+  left: 2px;
+  width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 2;
 }
@@ -42,7 +43,7 @@ export default {
 
 .navbar a {
   color: white;
-  padding: 10px;
+  padding: 12px;
   text-decoration: none;
   font-weight: bold; /* Make the text more prominent */
 }

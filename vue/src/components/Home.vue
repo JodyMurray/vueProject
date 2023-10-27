@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <Navbar />
     <div class="overlay">
       <div class="content">
         <h1>Welcome to Recipe Rave!</h1>
