@@ -2,15 +2,15 @@
   <nav class="navbar">
     <img class="logo" src="../assets/logo1.png" alt="Logo" />
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Sign In</a></li>
+      <router-link to="/" class="">Home</router-link>
+      <router-link to="/signin">Sign In</router-link>
     </ul>
   </nav>
 </template>
 
 <script>
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
 }
 </script>
 
