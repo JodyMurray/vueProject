@@ -85,27 +85,29 @@ export default {
 
 .recipe {
   margin-top: 20px;
+  margin-bottom: 20px;
   border: 1px solid #ddd;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
 }
 .recipe p {
   width: 100%;
 }
-.ingredients-list {
-  list-style-type: none;
-  padding: 0;
-}
 
 .recipe img {
-  max-width: 100%; /* Ensure the image doesn't exceed the width of its container */
-  height: auto; /* Allow the image to maintain its aspect ratio */
-  border-radius: 5px; /* Add border radius to match the recipe box */
-  margin-bottom: 10px; /* Adjust margin as needed for spacing */
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 .content {
   text-align: center;
   color: white;
+}
+
+.content h1 {
+  padding: 10px;
 }
 </style>
